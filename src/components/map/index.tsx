@@ -1,5 +1,5 @@
-export { Pin } from '../../components/map/pin';
-export { Map } from '../../components/map/map/index';
-export { StopInfo } from '../../components/map/stop-info';
-export { RouteplotOverlay } from '../../components/map/polyline';
-export { TrainPin } from '../../components/map/train-pin';
+export { Pin } from './pin';
+export { Map } from './map';
+export { StopInfo } from './stop-info';
+export { RouteplotOverlay } from './polyline';
+export { TrainPin } from './train-pin';

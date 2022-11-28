@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useDispatch } from 'react-redux';
 import { Stop } from '../../../store/stops/types';
-import { Map } from '../../../components';
+import { Map } from 'src/components/map';
 import { Payload } from '../../../store/types';
 import { actions } from '../../../features/stops/constants';
 import { showStopsAction as showStops } from '../../../features/stops/actions';

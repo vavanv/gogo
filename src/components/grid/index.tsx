@@ -1,2 +1,2 @@
-export { GridContainer } from '../../components/grid/grid-container';
-export { GridItem } from '../../components/grid/grid-item';
+export { GridContainer } from './grid-container';
+export { GridItem } from './grid-item';

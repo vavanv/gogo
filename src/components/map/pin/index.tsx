@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Stop } from '../../../store/stops/types';
+import { Stop } from 'src/store/stops/types';
 
 import {
   Train as TrainIcon,

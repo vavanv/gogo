@@ -71,7 +71,7 @@ const StopInfoComponent = (props: Props) => {
           subheader={stop.city}
         />
         <CardContent>
-          {stop.streetName && (
+          {stop?.streetName && (
             <>
               <Typography variant="subtitle2" component="p">
                 {intl.formatMessage({ id: messages.streetName })}
@@ -81,7 +81,7 @@ const StopInfoComponent = (props: Props) => {
               </Typography>
             </>
           )}
-          {stop.intersection && (
+          {stop?.intersection && (
             <>
               <Typography variant="subtitle2" component="p">
                 {intl.formatMessage({ id: messages.intersection })}

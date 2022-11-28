@@ -1,35 +1,34 @@
 import * as React from 'react';
 import ReactMapGL, { Marker, NavigationControl, GeolocateControl, Popup } from 'react-map-gl';
 import { WithStyles, withStyles } from '@mui/styles';
-import { Stop } from '../../../store/stops/types';
-import { Pin, StopInfo } from '../../../components';
+import { Stop } from 'src/store/stops/types';
+import { Pin } from '../pin';
+import { StopInfo } from '../stop-info';
+
 import { styles } from './styles';
-// import { image.png } from './constants';
 
 interface Props extends WithStyles<typeof styles> {
   stopList?: Stop[];
   children?: React.ReactNode;
 }
 
-const MapComponent = (props: Props & WithStyles<typeof styles>) => {
-  const { classes, stopList, children } = props;
+const viewport = {
+  latitude: 43.644549,
+  longitude: -79.380171,
+  zoom: 12.5,
+  bearing: 0,
+  pitch: 0,
+};
 
-  const viewport = {
-    latitude: 43.644549,
-    longitude: -79.380171,
-    zoom: 12.5,
-    bearing: 0,
-    pitch: 0,
-  };
-
-  const [selectedStopState, updateSelectedStop] = React.useState<null | Stop>(null);
-  const [viewportState, updateViewport] = React.useState(viewport);
+const MapComponent = ({ classes, stopList, children }: Props & WithStyles<typeof styles>) => {
+  const [selectedStop, setSelectedStop] = React.useState<null | Stop>(null);
+  const [viewportState, setViewportState] = React.useState(viewport);
 
   // eslint-disable-next-line react/no-multi-comp
   const renderStopMarker = (stop: Stop, index: string | number) => {
     return (
       <Marker key={index} longitude={stop.longitude} latitude={stop.latitude}>
-        <Pin stop={stop} onClick={() => updateSelectedStop(stop)} />
+        <Pin stop={stop} onClick={() => setSelectedStop(stop)} />
       </Marker>
     );
   };
@@ -37,17 +36,17 @@ const MapComponent = (props: Props & WithStyles<typeof styles>) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const renderPopup: any = () => {
     return (
-      selectedStopState && (
+      selectedStop && (
         <Popup
-          // tipSize={5}
+          tipSize={5}
           anchor="top"
-          longitude={selectedStopState.longitude}
-          latitude={selectedStopState.latitude}
+          longitude={selectedStop.longitude}
+          latitude={selectedStop.latitude}
           closeOnClick={false}
-          onClose={() => updateSelectedStop(null)}
-          // dynamicPosition={false}
+          onClose={() => setSelectedStop(null)}
+          dynamicPosition={false}
         >
-          <StopInfo stop={selectedStopState} />
+          <StopInfo stop={selectedStop} />
         </Popup>
       )
     );
@@ -57,16 +56,17 @@ const MapComponent = (props: Props & WithStyles<typeof styles>) => {
     <ReactMapGL
       // eslint-disable-next-line react/jsx-props-no-spreading
       {...viewportState}
-      // width="100%"
-      // height="100vh"
-      // mapboxApiAccessToken={API_KEY}
-      // onViewportChange={updateViewport}
+      width="100%"
+      height="100vh"
+      onViewportChange={setViewportState}
+      style={{ width: '100%', height: '100hv' }}
       mapStyle="mapbox://styles/mapbox/light-v10"
-      // className={classes.map}
+      mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+      className={classes.map}
     >
       {stopList && stopList.map(renderStopMarker)}
 
-      {selectedStopState && renderPopup()}
+      {selectedStop && renderPopup()}
 
       <div className={classes.navigationControl}>
         <NavigationControl />

@@ -1,6 +1,6 @@
-import * as React from 'react';
-import { Grid } from '@mui/material';
 import { WithStyles, withStyles } from '@mui/styles';
+import { Grid } from '@mui/material';
+
 import { styles } from './styles';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -14,4 +14,4 @@ const GridItemComponent = (props: any & WithStyles<typeof styles>) => {
   );
 };
 
-export const GridItem = React.memo(withStyles(styles)(GridItemComponent));
+export const GridItem = withStyles(styles)(GridItemComponent);

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import CanvasOverlay from 'react-map-gl';
+import { CanvasOverlay } from 'react-map-gl';
 
 interface Props {
   lineSize: number;
@@ -25,8 +25,7 @@ const RouteplotOverlayComponent = (props: Props) => {
     }
   };
 
-  // return <CanvasOverlay  redraw={redraw} />;
-  return <CanvasOverlay />;
+  return <CanvasOverlay redraw={redraw} />;
 };
 
 export const RouteplotOverlay = React.memo(RouteplotOverlayComponent);

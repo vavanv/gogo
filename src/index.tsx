@@ -1,19 +1,24 @@
 // Support Babel 7.4
+import * as React from 'react';
 import 'core-js/stable';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import 'regenerator-runtime/runtime';
 
-import * as React from 'react';
 import ReactDOM from 'react-dom';
 import 'normalize.css';
 import 'typeface-roboto';
 
-import App from '../src/app/app/index';
+import App from 'src/app/app/index';
 import reportWebVitals from './reportWebVitals';
 
 // import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root'),
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
