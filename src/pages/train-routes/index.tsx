@@ -1,12 +1,12 @@
 import * as React from 'react';
 
 import { MainContainer } from '../../pages/main-container';
-import { TrainRoutesFormContainer } from './train-routes-form/container';
+import { TrainRoutesForm } from './train-routes-form';
 
 function TrainRoutesComponent() {
   return (
     <MainContainer>
-      <TrainRoutesFormContainer />
+      <TrainRoutesForm />
     </MainContainer>
   );
 }
