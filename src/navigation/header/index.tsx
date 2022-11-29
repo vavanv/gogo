@@ -14,8 +14,8 @@ import {
 import { WithStyles, withStyles } from '@mui/styles';
 import { Menu as MenuIcon, Language as LanguageIcon } from '@mui/icons-material';
 import { useIntl } from 'react-intl';
-import { selectLanguageAction as selectLanguage } from '../../features/intl/actions';
-import { AppState } from '../../store/types';
+import { selectLanguageAction as selectLanguage } from 'src/features/intl/actions';
+import { AppState } from 'src/store/types';
 
 import messages from './messages';
 import { styles } from './styles';

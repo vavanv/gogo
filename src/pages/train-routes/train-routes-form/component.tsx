@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { useDispatch } from 'react-redux';
-import { Stop } from '../../../store/stops/types';
-import { Route } from '../../../store/routes/types';
-import { Map } from '../../../components';
-import { Payload } from '../../../store/types';
-import { showStopsAction as showStops } from '../../../features/stops/actions';
-import { actions } from '../../../features/stops/constants';
-import { RouteplotOverlay } from '../../../components/index';
-import { Shape } from '../../../store/shapes/types';
+import { Stop } from 'src/store/stops/types';
+import { Route } from 'src/store/routes/types';
+import { Map } from 'src/components';
+import { Payload } from 'src/store/types';
+import { showStopsAction as showStops } from 'src/features/stops/actions';
+import { actions } from 'src/features/stops/constants';
+import { RouteplotOverlay } from 'src/components/index';
+import { Shape } from 'src/store/shapes/types';
 import { ControlPanel } from '../control-panel';
 
 interface Props {

@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import { EmojiTransportation as TransportationIcon } from '@mui/icons-material';
 import { useIntl } from 'react-intl';
 
-import { TitleItem } from '../../../navigation/menu-items/index';
+import { TitleItem } from 'src/navigation/menu-items/index';
 import { TitleSettings } from './settings';
 
 import messages from './messages';

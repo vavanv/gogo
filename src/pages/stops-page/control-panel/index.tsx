@@ -8,9 +8,10 @@ import {
   DirectionsBus as BusIcon,
   DeviceHub as TransportationHubIcon,
 } from '@mui/icons-material';
-import { showStopsAction as showStops } from '../../../features/stops/actions';
-import { GridContainer, GridItem } from '../../../components';
-import { actions } from '../../../features/stops/constants';
+import { showStopsAction as showStops } from 'src/features/stops/actions';
+import { GridContainer, GridItem } from 'src/components';
+import { actions } from 'src/features/stops/constants';
+
 import { styles } from './styles';
 import { messages } from './messages';
 

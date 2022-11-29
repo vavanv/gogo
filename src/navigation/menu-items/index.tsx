@@ -9,7 +9,7 @@ import {
 import { Link } from 'react-router-dom';
 import { useIntl } from 'react-intl';
 
-import { ROUTE_ROOT, TRAIN_ROUTES, TRAIN_ROUTES_ONLINE } from '../../app/app/constants';
+import { ROUTE_ROOT, TRAIN_ROUTES, TRAIN_ROUTES_ONLINE } from 'src/app/app/constants';
 
 import { Legal } from './legal';
 import { Title } from './title';

@@ -5,7 +5,7 @@ import { Settings as SettingsIcon } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import { useIntl } from 'react-intl';
 
-import { TitleItem } from '../../../../navigation/menu-items/index';
+import { TitleItem } from 'src/navigation/menu-items/index';
 
 import messages from './messages';
 import { styles } from './styles';
