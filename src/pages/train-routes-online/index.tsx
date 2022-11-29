@@ -1,12 +1,12 @@
 import * as React from 'react';
 
 import { MainContainer } from '../../pages/main-container';
-import { TrainRoutesOnLineFormContainer } from './train-routes-online-form/container';
+import { TrainRoutesOnLineForm } from './train-routes-online-form';
 
 function TrainRoutesOnLineComponent() {
   return (
     <MainContainer>
-      <TrainRoutesOnLineFormContainer />
+      <TrainRoutesOnLineForm />
     </MainContainer>
   );
 }

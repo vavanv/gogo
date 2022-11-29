@@ -1,12 +1,12 @@
 import * as React from 'react';
 
-import { MainContainer } from '../../pages/main-container';
-import { StopsFormContainer } from '../../pages/stops-page/stops-form/container';
+import { MainContainer } from 'src/pages/main-container';
+import { StopsForm } from 'src/pages/stops-page/stops-form';
 
 function StopsPageComponent() {
   return (
     <MainContainer>
-      <StopsFormContainer />
+      <StopsForm />
     </MainContainer>
   );
 }
