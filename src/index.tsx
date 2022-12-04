@@ -1,9 +1,8 @@
 // Support Babel 7.4
-import * as React from 'react';
 import 'core-js/stable';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import 'regenerator-runtime/runtime';
-
+import 'mapbox-gl/dist/mapbox-gl.css';
 import ReactDOM from 'react-dom';
 import 'normalize.css';
 import 'typeface-roboto';
