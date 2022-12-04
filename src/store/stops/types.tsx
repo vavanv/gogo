@@ -1,14 +1,13 @@
 export interface Stop {
-  code: string;
-  stopName: string;
-  city: string;
-  streetName: string;
-  longitude: number;
-  latitude: number;
-  isBus: boolean;
-  isTrain: boolean;
+  zoneCode: string;
   streetNumber: string;
   intersection: string;
+  code: string;
+  city: string;
+  streetName: string;
+  stopName: string;
+  longitude: number;
+  latitude: number;
   drivingDirections: string;
   facilities: Facilities;
   parkings: Parkings;

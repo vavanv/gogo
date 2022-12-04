@@ -16,11 +16,6 @@ const mainPageMenu = {
 };
 
 const controlPanel = {
-  'CONTROL_PANEL.LEGEND': 'Legend',
-  'CONTROL_PANEL.STOPS': 'Stops',
-  'CONTROL_PANEL.BUSES': 'Buses',
-  'CONTROL_PANEL.TRAINS': 'Trains',
-  'CONTROL_PANEL.TRAINS_AND_BUSES': 'Trains and Buses',
   'CONTROL_PANEL.STOPS_DESCRIPTION':
     'You can select type of stops you want to see on the map by clicking a checkbox below.',
   'CONTROL_PANEL.TRAIN_ROUTES': 'Train Routes',

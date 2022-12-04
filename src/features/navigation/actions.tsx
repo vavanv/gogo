@@ -1,4 +1,4 @@
-import { Payload } from '../../store/types';
+import { Payload } from 'src/store/types';
 
 export const SHOW_POPUP = 'SHOW_POPUP';
 export const showPopupAction = (payload: Payload) => ({

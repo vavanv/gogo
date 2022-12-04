@@ -1,5 +1,5 @@
-export const API_BASE_URL = 'https://gogoapiv1.azurewebsites.net';
-// export const API_BASE_URL = 'http://localhost/GoGoApi';
+export const API_BASE_URL = 'https://gogo-api.onrender.com/';
+//export const API_BASE_URL = 'http://localhost:8081/';
 
 export interface TAppConfig {
   baseApiUrl: string;

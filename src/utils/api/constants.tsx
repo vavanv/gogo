@@ -1,5 +1,5 @@
 export const API_URLS = {
-  stops: 'api/cache/stop/list',
+  stops: 'api/V1/stops',
   shapesTrains: 'api/shapes/trains/list',
   routes: 'api/routes/dropdown',
   tripTrains: 'api/service/trip/trains',

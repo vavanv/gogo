@@ -7,7 +7,7 @@ import Store from 'src/store/create-store';
 import Theme from './theme';
 
 import { AppRoutes } from './routes';
-import { IntlContainer } from '../../intl';
+import { IntlContainer } from 'src/intl';
 
 const App = () => {
   return (
