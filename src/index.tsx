@@ -8,7 +8,7 @@ import 'normalize.css';
 
 import { createRoot } from 'react-dom/client';
 
-import App from 'src/app/app/index';
+import App from 'src/app/index';
 import reportWebVitals from './reportWebVitals';
 
 const container = document.getElementById('root')!;
