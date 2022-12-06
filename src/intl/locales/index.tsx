@@ -4,18 +4,15 @@ import moment from 'moment';
 import 'moment/locale/fr';
 
 import { en } from '../../intl/locales/en';
-import { fr } from '../../intl/locales/fr';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const messages: any = {
   en: en,
-  fr: fr,
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const momentLocales: any = {
   'en-US': 'en',
-  'fr-FR': 'fr',
 };
 
 export const LOCALE = 'locale';

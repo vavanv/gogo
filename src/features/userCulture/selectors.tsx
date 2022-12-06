@@ -1,7 +1,7 @@
 import { createSelector } from 'reselect';
 
-import { AppState } from '../../store/types';
-import { UserCultureState } from '../../store/userCulture/types';
+import { AppState } from 'src/store/types';
+import { UserCultureState } from 'src/store/userCulture/types';
 
 export const getUserCultureState = (state: AppState): UserCultureState => state.userCulture;
 

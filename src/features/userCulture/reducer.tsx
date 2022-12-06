@@ -1,9 +1,9 @@
 import { mergeRight } from 'ramda';
 
-import { SELECT_LANGUAGE } from '../../features/intl/actions';
-import { UserCultureState } from '../../store/userCulture/types';
-import { AnyAction } from '../../store/types';
-import { LOCALE, getLanguage } from '../../intl/locales/index';
+import { SELECT_LANGUAGE } from 'src/features/intl/actions';
+import { UserCultureState } from 'src/store/userCulture/types';
+import { AnyAction } from 'src/store/types';
+import { LOCALE, getLanguage } from 'src/intl/locales/index';
 import { LOGIN, LOGOUT, FETCH_USER } from './actions';
 
 export const initialState: UserCultureState = {
