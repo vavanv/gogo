@@ -13,7 +13,7 @@ import {
 } from '@mui/material';
 import { WithStyles, withStyles } from '@mui/styles';
 import { ExpandMore as ExpandMoreIcon } from '@mui/icons-material';
-import { Stop, Facilities, Parking, Parkings } from '../../../store/stops/types';
+import { Stop, Facilities, Parking, Parkings } from 'src/store/stops/types';
 import { styles } from './styles';
 import { messages } from './messages';
 
@@ -35,7 +35,7 @@ const StopInfoComponent = (props: Props) => {
   const renderFacilities = (facilities: Facilities) => {
     return (
       <Typography variant="caption" component="p" gutterBottom>
-        {facilities.map(facility => facility.description).join(', ')}
+        {facilities?.map(facility => facility.description).join(', ')}
       </Typography>
     );
   };
@@ -44,7 +44,7 @@ const StopInfoComponent = (props: Props) => {
   const renderParking = (parking: Parking, index: number) => {
     return (
       <Typography key={index} variant="caption" component="p" gutterBottom>
-        {parking.name}({intl.formatMessage({ id: messages.parkingSpots })}:{parking.parkSpots})
+        {parking?.name}({intl.formatMessage({ id: messages.parkingSpots })}:{parking.parkSpots})
       </Typography>
     );
   };
@@ -59,7 +59,7 @@ const StopInfoComponent = (props: Props) => {
   });
 
   return (
-    <div>
+    <>
       <Card className={classes.card}>
         <CardHeader
           avatar={
@@ -91,7 +91,7 @@ const StopInfoComponent = (props: Props) => {
               </Typography>
             </>
           )}
-          {stop.drivingDirections && (
+          {stop?.drivingDirections && (
             <>
               <Typography variant="subtitle2" component="p">
                 {intl.formatMessage({ id: messages.drivingDirection })}
@@ -102,7 +102,7 @@ const StopInfoComponent = (props: Props) => {
             </>
           )}
         </CardContent>
-        {(stop.facilities.length > 0 || stop.parkings.length > 0) && (
+        {(stop?.facilities?.length > 0 || stop?.parkings?.length > 0) && (
           <>
             <CardActions disableSpacing={true}>
               <IconButton
@@ -116,7 +116,7 @@ const StopInfoComponent = (props: Props) => {
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
               <CardContent>
-                {stop.facilities.length > 0 && (
+                {stop?.facilities?.length > 0 && (
                   <>
                     <Typography variant="subtitle2" component="p">
                       {intl.formatMessage({ id: messages.facilities })}
@@ -124,7 +124,7 @@ const StopInfoComponent = (props: Props) => {
                     {stop.facilities && renderFacilities(stop.facilities)}
                   </>
                 )}
-                {stop.parkings.length > 0 && (
+                {stop?.parkings?.length > 0 && (
                   <>
                     <Typography variant="subtitle2" component="p">
                       {intl.formatMessage({ id: messages.parkings })}
@@ -137,7 +137,7 @@ const StopInfoComponent = (props: Props) => {
           </>
         )}
       </Card>
-    </div>
+    </>
   );
 };
 
