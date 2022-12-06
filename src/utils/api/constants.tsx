@@ -1,6 +1,6 @@
 export const API_URLS = {
   stops: 'api/V1/stops',
-  shapesTrains: 'api/shapes/trains/list',
+  shapes: 'api/V1/shapes',
   routes: 'api/routes/dropdown',
   tripTrains: 'api/service/trip/trains',
 };
