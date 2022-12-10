@@ -1,7 +1,7 @@
 import * as R from 'ramda';
 
-import { AnyAction } from '../../store/types';
-import { RoutesState } from '../../store/routes/types';
+import { AnyAction } from 'src/store/types';
+import { RoutesState } from 'src/store/routes/types';
 import { FETCH_ROUTE_LIST_ITEMS } from './actions';
 
 export const initialState: RoutesState = {

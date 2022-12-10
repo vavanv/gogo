@@ -1,1 +1,1 @@
-export { IntlContainer } from '../intl/container';
+export { IntlContainer } from 'src/intl/container';

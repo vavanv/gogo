@@ -8,11 +8,11 @@ interface Props extends WithStyles<typeof styles> {
   children?: React.ReactNode;
 }
 
-const MainContainerComponent = (props: Props) => {
+const MainContainerComponent = ({ children }: Props) => {
   return (
     <>
       <NavBar headerColor={'primary'} />
-      <div>{props.children}</div>
+      <div>{children}</div>
     </>
   );
 };

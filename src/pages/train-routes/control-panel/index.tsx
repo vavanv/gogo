@@ -2,11 +2,11 @@ import * as React from 'react';
 import { useDispatch } from 'react-redux';
 import classNames from 'classnames';
 import { useIntl } from 'react-intl';
-import { Route } from '../../../store/routes/types';
+import { Route } from 'src/store/routes/types';
 import { Drawer, Typography, TextField, FormControl, MenuItem } from '@mui/material';
 import { WithStyles, withStyles } from '@mui/styles';
-import { selectRouteAction as selectRoute } from '../../../features/route-selected/actions';
-import { GridContainer, GridItem } from '../../../components';
+import { selectRouteAction as selectRoute } from 'src/features/route-selected/actions';
+import { GridContainer, GridItem } from 'src/components';
 import { styles } from './styles';
 import { messages } from './messages';
 

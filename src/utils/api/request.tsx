@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-import { getEnvConfig } from '../../utils/api/config';
-import { getUrlWithSlash, getPathWithoutSlash } from '../../utils/url/index';
+import { getEnvConfig } from 'src/utils/api/config';
+import { getUrlWithSlash, getPathWithoutSlash } from 'src/utils/url/index';
 
-import { API_CONSTANTS } from '../../utils/api/constants';
-import { HttpError } from '../../utils/api/httpError';
-import { TimeoutError } from '../../utils/api/timeoutError';
+import { API_CONSTANTS } from 'src/utils/api/constants';
+import { HttpError } from 'src/utils/api/httpError';
+import { TimeoutError } from 'src/utils/api/timeoutError';
 
 export type Credentials = 'omit' | 'same-origin' | 'include';
 

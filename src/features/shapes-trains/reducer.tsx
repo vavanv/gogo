@@ -1,7 +1,7 @@
 import * as R from 'ramda';
 
-import { AnyAction } from '../../store/types';
-import { ShapesTrainsState } from '../../store/shapes/types';
+import { AnyAction } from 'src/store/types';
+import { ShapesTrainsState } from 'src/store/shapes/types';
 import { FETCH_SHAPE_TRAINS_LIST_ITEMS } from './actions';
 
 export const initialState: ShapesTrainsState = {

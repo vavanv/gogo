@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import { selectMessages } from '../features/intl/selectors';
-import { selectUserCultureCode } from '../features/userCulture/selectors';
-import { Intl } from '../intl/component';
-import { AppState } from '../store/types';
+import { selectMessages } from 'src/features/intl/selectors';
+import { selectUserCultureCode } from 'src/features/userCulture/selectors';
+import { Intl } from 'src/intl/component';
+import { AppState } from 'src/store/types';
 
 export const mapStateToProps = createStructuredSelector<
   AppState,

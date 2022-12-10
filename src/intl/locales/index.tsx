@@ -3,7 +3,7 @@ import moment from 'moment';
 
 import 'moment/locale/fr';
 
-import { en } from '../../intl/locales/en';
+import { en } from 'src/intl/locales/en';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const messages: any = {

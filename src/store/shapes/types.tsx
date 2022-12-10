@@ -1,5 +1,4 @@
 export interface Shape {
-  // id: number;
   shapeId: string;
   lon: number;
   lat: number;

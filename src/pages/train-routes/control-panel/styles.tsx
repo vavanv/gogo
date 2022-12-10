@@ -1,6 +1,6 @@
 import { Theme } from '@mui/material';
 import { createStyles } from '@mui/styles';
-import { defaultLabelFont } from '../../../assets/jss/portal-material';
+import { defaultLabelFont } from 'src/assets/jss/portal-material';
 
 export const styles = ({ spacing }: Theme) => {
   return createStyles({

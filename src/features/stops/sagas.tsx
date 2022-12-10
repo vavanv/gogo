@@ -1,8 +1,8 @@
 import { call, all, takeLatest, put } from 'redux-saga/effects';
 
-import { FETCH_STOP_LIST_ITEMS, fetchStopListItemsAction } from '../../features/stops/actions';
-import { fetchStopListItems } from '../../api/stops';
-import { Stops } from '../../store/stops/types';
+import { FETCH_STOP_LIST_ITEMS, fetchStopListItemsAction } from 'src/features/stops/actions';
+import { fetchStopListItems } from 'src/api/stops';
+import { Stops } from 'src/store/stops/types';
 
 export function* requestStopList() {
   try {

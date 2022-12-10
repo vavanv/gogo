@@ -1,4 +1,4 @@
-import { UINavBarState } from '../../store/ui/nav-bar/types';
+import { UINavBarState } from 'src/store/ui/nav-bar/types';
 
 export interface UIState {
   navBar: UINavBarState;

@@ -15,8 +15,7 @@ const App = () => {
       <Provider store={Store}>
         <ThemeProvider theme={Theme}>
           <IntlContainer>
-            {/* CssBaseline kickstart an elegant, consistent,
-              and simple baseline to build upon. */}
+            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
             <CssBaseline />
             <BrowserRouter>
               <AppRoutes />

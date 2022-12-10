@@ -1,9 +1,9 @@
-import { UserCultureState } from '../store/userCulture/types';
-import { UIState } from '../store/ui/types';
-import { StopsState } from '../store/stops/types';
-import { ShapesTrainsState } from '../store/shapes/types';
-import { RoutesState, RouteSelectedState } from '../store/routes/types';
-import { TrainTripsState } from '../store/train-trips/types';
+import { UserCultureState } from 'src/store/userCulture/types';
+import { UIState } from 'src/store/ui/types';
+import { StopsState } from 'src/store/stops/types';
+import { ShapesTrainsState } from 'src/store/shapes/types';
+import { RoutesState, RouteSelectedState } from 'src/store/routes/types';
+import { TrainTripsState } from 'src/store/train-trips/types';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type Payload = any;

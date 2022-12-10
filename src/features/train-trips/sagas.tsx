@@ -3,10 +3,10 @@ import { call, all, takeLatest, put, delay } from 'redux-saga/effects';
 import {
   FETCH_TRAIN_TRIPS_LIST_ITEMS,
   fetchTrainTripsListItemsAction,
-} from '../../features/train-trips/actions';
+} from 'src/features/train-trips/actions';
 
-import { fetchTripTrainsListItems } from '../../api/train-trips';
-import { TrainTrips } from '../../store/train-trips/types';
+import { fetchTripTrainsListItems } from 'src/api/train-trips';
+import { TrainTrips } from 'src/store/train-trips/types';
 
 export function* requestTrainTripsList() {
   for (;;) {

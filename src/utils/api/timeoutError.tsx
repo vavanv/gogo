@@ -1,4 +1,4 @@
-import { ERROR_TYPES } from '../../utils/api/constants';
+import { ERROR_TYPES } from 'src/utils/api/constants';
 
 export class TimeoutError extends Error {
   public constructor(statusText?: string) {

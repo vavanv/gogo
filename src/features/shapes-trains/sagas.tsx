@@ -4,8 +4,8 @@ import {
   FETCH_SHAPE_TRAINS_LIST_ITEMS,
   fetchShapeTrainsListItemsAction,
 } from '../../features/shapes-trains/actions';
-import { fetchShapeTrainsListItems } from '../../api/shapes';
-import { Shapes } from '../../store/shapes/types';
+import { fetchShapeTrainsListItems } from 'src/api/shapes';
+import { Shapes } from 'src/store/shapes/types';
 
 export function* requestShapeTrainsListItems() {
   try {

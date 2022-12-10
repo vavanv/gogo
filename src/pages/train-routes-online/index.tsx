@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { MainContainer } from '../../pages/main-container';
+import { MainContainer } from 'src/pages/main-container';
 import { TrainRoutesOnLineForm } from './train-routes-online-form';
 
 function TrainRoutesOnLineComponent() {

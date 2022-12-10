@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { IntlProvider } from 'react-intl';
 
-import { getLanguage } from '../intl/locales';
+import { getLanguage } from 'src/intl/locales';
 
 interface Props {
   userCultureCode: string;

@@ -1,4 +1,4 @@
-import { createRequestTypes, asyncActionCreators } from '../../utils/api/actions';
+import { createRequestTypes, asyncActionCreators } from 'src/utils/api/actions';
 
 export const LOGIN = createRequestTypes('LOGIN');
 export const loginAction = asyncActionCreators(LOGIN);

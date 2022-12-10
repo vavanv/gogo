@@ -1,4 +1,4 @@
-import { Payload } from '../../store/types';
+import { Payload } from 'src/store/types';
 
 export const SELECT_LANGUAGE = 'SELECT_LANGUAGE';
 export const selectLanguageAction = (payload: Payload) => ({

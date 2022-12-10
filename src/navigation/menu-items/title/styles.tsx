@@ -1,6 +1,6 @@
 import { Theme } from '@mui/material';
 import { createStyles } from '@mui/styles';
-import { dividerColor, headerBackground } from '../../../assets/jss/portal-material';
+import { dividerColor, headerBackground } from 'src/assets/jss/portal-material';
 
 export const styles = ({ spacing }: Theme) =>
   createStyles({

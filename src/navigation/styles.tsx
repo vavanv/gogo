@@ -1,5 +1,5 @@
 import { createStyles } from '@mui/styles';
-import { drawerBackGround } from '../assets/jss/portal-material';
+import { drawerBackGround } from 'src/assets/jss/portal-material';
 
 const color = 'rgba(255, 255, 255, 0.7)';
 

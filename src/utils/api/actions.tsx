@@ -1,4 +1,4 @@
-import { AsyncActions, Payload } from '../../store/types';
+import { AsyncActions, Payload } from 'src/store/types';
 
 const REQUEST = 'REQUEST';
 const START = 'START';

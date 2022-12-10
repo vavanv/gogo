@@ -1,8 +1,8 @@
 import { assoc } from 'ramda';
 
-import { UINavBarState } from '../../../store/ui/nav-bar/types';
-import { AnyAction } from '../../../store/types';
-import { FETCH_STOP_LIST_ITEMS } from '../../../features/stops/actions';
+import { UINavBarState } from 'src/store/ui/nav-bar/types';
+import { AnyAction } from 'src/store/types';
+import { FETCH_STOP_LIST_ITEMS } from 'src/features/stops/actions';
 
 export const initialState: UINavBarState = {
   loading: false,

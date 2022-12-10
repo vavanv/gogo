@@ -1,7 +1,7 @@
 import * as R from 'ramda';
 
-import { AnyAction } from '../../store/types';
-import { RouteSelectedState } from '../../store/routes/types';
+import { AnyAction } from 'src/store/types';
+import { RouteSelectedState } from 'src/store/routes/types';
 import { SELECT_ROUTE } from './actions';
 
 export const initialState: RouteSelectedState = {
