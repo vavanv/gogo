@@ -1,8 +1,6 @@
 import axios from 'axios';
 
-import { getEnvConfig } from 'src/utils/api/config';
 import { getUrlWithSlash, getPathWithoutSlash } from 'src/utils/url/index';
-
 import { API_CONSTANTS } from 'src/utils/api/constants';
 import { HttpError } from 'src/utils/api/httpError';
 import { TimeoutError } from 'src/utils/api/timeoutError';
@@ -24,7 +22,7 @@ export interface FetchParams {
 
 export async function fetchHandler({
   timeout = API_CONSTANTS.timeout,
-  baseUrl = getEnvConfig().baseApiUrl,
+  baseUrl = process.env.API_BASE_URL as string,
   body,
   credentials = 'omit',
   headers,
