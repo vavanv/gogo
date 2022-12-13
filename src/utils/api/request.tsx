@@ -4,7 +4,6 @@ import { getUrlWithSlash, getPathWithoutSlash } from 'src/utils/url/index';
 import { API_CONSTANTS } from 'src/utils/api/constants';
 import { HttpError } from 'src/utils/api/httpError';
 import { TimeoutError } from 'src/utils/api/timeoutError';
-import { getEnvConfig } from './config';
 
 export type Credentials = 'omit' | 'same-origin' | 'include';
 
@@ -23,7 +22,7 @@ export interface FetchParams {
 
 export async function fetchHandler({
   timeout = API_CONSTANTS.timeout,
-  baseUrl = getEnvConfig().baseApiUrl,
+  baseUrl = process.env.REACT_APP_API_BASE_URL as string,
   body,
   credentials = 'omit',
   headers,
