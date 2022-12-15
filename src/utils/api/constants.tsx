@@ -2,7 +2,7 @@ export const API_URLS = {
   stops: 'api/V1/stops',
   shapes: 'api/V1/shapes',
   routes: 'api/V1/routes',
-  tripTrains: 'api/service/trip/trains',
+  tripTrains: 'api/V1/service/trains',
 };
 
 export const ERROR_TYPES = {
