@@ -11,7 +11,7 @@ export const initialState: TrainTripsState = {
 const reducer = (state = initialState, action: AnyAction): TrainTripsState => {
   switch (action.type) {
     case FETCH_TRAIN_TRIPS_LIST_ITEMS.SUCCESS:
-      return R.assoc('items', action.payload.trip, state);
+      return R.assoc('items', action.payload, state);
     case FETCH_TRAIN_TRIPS_LIST_ITEMS.FAILURE:
       return initialState;
     default:
